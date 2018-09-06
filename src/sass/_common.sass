@@ -1,0 +1,26 @@
++font('helvetic-font', helveticaneue)
++font-param('helvetic-font', helvetic_neue_bold, bold)
+
++font('myriadpro-font', myriadpro-regular)
++font-param('myriadpro-font', myriadpro-bold, bold)	
+
++font('opensans-font', opensans-regular)
++font-param('opensans-font', opensans-bold, bold)		
+
+=helvetic-font
+	font-family: helvetic-font, sans-serif
+
+=myriadpro-font
+	font-family: myriadpro-font, sans-serif	
+
+=opensans-font
+	font-family: opensans-font, sans-serif		
+
+body
+	+myriadpro-font
+	background-color: $bg-color
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+

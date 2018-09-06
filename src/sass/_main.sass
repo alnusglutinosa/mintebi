@@ -1,0 +1,319 @@
+.header
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	padding: 50px 70px
+	z-index: 10
+
+
+.logo 
+	display: block
+
+	&__img
+		max-width: 100%
+		height: auto
+		object-fit: cover
+
+.section-banner
+	padding: 290px 20px 127px
+	color: #fff
+	position: relative
+	background-color: $bg-color--dark
+	background-image: url(../img/bg/map.svg)
+	background-repeat: no-repeat
+	background-size: 100%
+	background-position: top
+
+
+.sect-border
+	position: relative
+	padding: 48px 0px 48px 45px
+	border: 3px solid $color-decor
+
+	&__title
+		margin-bottom: 27px
+		color: #ffffff
+		font-size: 50px
+		line-height: 1
+		letter-spaing: 2
+		text-transform: uppercase
+
+	&__wrap
+		display: flex
+
+	&__content
+		width: 58%
+		padding-right: 35px
+
+	&__media-block
+		position: relative
+		width: 42%
+
+	&__img
+		// position: relative
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+
+		&::after
+			content: ""
+			position: absolute
+			bottom: -15%
+			left: 0
+			width: 51%
+			padding-bottom: 51%
+			background-image: url("../img/pic/slide2.jpg")
+			background-position: center center
+			background-size: cover
+
+		&--small
+			&::after
+				content: ""
+				bottom: -35%
+				left: 50%
+				transform: translate(-50%,0)
+				width: 28%
+				padding-bottom: 28%
+				background-image: url("../img/pic/slide1.jpg")
+
+		&--big
+			&::after
+				content: ""
+				top: -47%
+				left: auto
+				right: -17%
+				width: 100%
+				padding-bottom: 70%
+				background-image: url("../img/pic/slide3.jpg")
+
+.section-advantages
+	padding-top: 116px
+	padding-bottom: 116px
+	background-color: #f0ebe7
+
+	&__title
+		margin-bottom: 99px
+		text-align: center
+
+.sect-title
+	position: relative
+	padding-top: 45px
+	+myriadpro-font
+	font-size: 30px
+	font-weight: 700
+	line-height: 1.42
+	color: #2c2e37
+	text-transform: uppercase
+
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%,0)
+		width: 100px
+		height: 8px
+		background-image: url(../img/ico/wawe.svg)
+		background-position: center center
+		background-size: cover
+
+.advantage 
+	margin-left: -56px
+	margin-right: -56px
+
+	&__wrap
+		text-decoration: none
+		
+	&__title
+		+myriadpro-font
+		font-size: 18px
+		font-weight: 700
+		line-height: 1.33
+		color: #2c2e37
+		text-align: center
+
+	&__ico
+		width: 179px
+		height: 179px
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: 30px
+		padding: 70px
+		color: #404041
+		background-color: #e6e0dc
+		border-radius: 100%
+		background-image: url(../img/pic/polygon.png)
+		background-position: center 27px
+		background-repeat: no-repeat
+
+		svg
+			z-index: 99
+			display: block
+			width: 100%
+			height: 100%
+			fill: currentColor
+
+.advantages-list
+	display: flex
+
+	&__item
+		width: 33.33%
+		padding-left: 56px
+		padding-right: 56px
+
+.logos
+	background-color: #5e5e5e
+	padding-top: 50px
+	padding-bottom: 50px
+
+	&__inner
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&__item
+		padding: 0 70px
+
+
+.section-info
+	padding-top: 116px
+	padding-bottom: 116px
+	background-color: #f0ebe7
+
+	&__feedback
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 200px
+
+	&__feedback-item
+		width: 50%
+
+.feedback
+	padding-top: 25px	
+	padding-left: 18px
+	padding-right: 18px
+
+	&__text
+		margin-bottom: 25px
+		font-size: 18px
+		line-height: 1.83
+		color: #646464
+
+	&__info
+		display: flex
+		align-items: center
+
+	&__photo
+		margin-right: 20px
+		padding-top: 8px
+
+	&__name
+		display: block
+		font-size: 16px
+		line-height: 1.8
+		font-weight: 700
+		color: #113752
+		text-decoration: none
+
+	&__position
+		display: block
+		line-height: 1
+		color: #113752
+		text-decoration: none
+
+	&__btn
+		margin-left: 85px
+
+
+.btn 
+	display: inline-block
+	padding: 0 15px 
+	color: #ffffff
+	font-size: 14px
+	line-height: 2.9
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+	text-decoration: none
+	background-color: #0c283f
+	border-radius: 5px
+	user-select: none
+
+	&:hover,
+	&:focus
+		background-color: #093559
+
+
+.about 
+	padding: 43px 30px
+	background-color: #ffffff
+	border-radius: 10px 
+
+	&__wrap
+		display: flex
+
+	&__img
+		width: 152px
+		margin-right: 30px
+
+	&__item
+		width: 70%
+		margin-right: 67px
+
+		&--main
+			width: 30%
+			margin-right: 0
+
+.info-sect
+
+	&__title
+		display: block
+		margin-bottom: 42px
+		+opensans-font
+		font-size: 36px
+		line-height: 1
+		letter-spacing: 5px
+		font-weight: 700
+		color: #0c283f
+		text-transform: uppercase
+		text-decoration: none
+
+	&__text
+		+opensans-font
+		font-size: 16px
+		line-height: 1.8
+		color: #383e4a
+		text-decoration: none
+
+	&__btn 
+		margin-top: 23px
+
+	&__contacts
+		margin-top: 37px
+
+	&__contact-link
+		display: block
+		+opensans-font
+		font-weight: 700
+		font-size: 16px
+		line-height: 1.81
+		color: #383e4a
+		text-decoration: none
+
+
+
+.footer
+	padding: 34px 0
+	background-color: #b3b0a9
+
+	&__copyriting
+		display: block
+		+opensans-font
+		font-size: 13px
+		line-height: 1.2
+		color: #ffffff
+		text-decoration: none
+
