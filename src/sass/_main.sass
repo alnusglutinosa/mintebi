@@ -93,17 +93,21 @@
 	padding-bottom: 116px
 	background-color: #f0ebe7
 
+	&__wrap
+		padding: 0 146px
+
 	&__title
-		margin-bottom: 99px
+		margin-bottom: 86px
 		text-align: center
 
 .sect-title
 	position: relative
-	padding-top: 45px
+	padding-top: 31px
 	+myriadpro-font
 	font-size: 30px
 	font-weight: 700
 	line-height: 1.42
+	letter-spacing: 3px
 	color: #2c2e37
 	text-transform: uppercase
 
@@ -120,8 +124,8 @@
 		background-size: cover
 
 .advantage 
-	margin-left: -56px
-	margin-right: -56px
+	// margin-left: -56px
+	// margin-right: -56px
 
 	&__wrap
 		text-decoration: none
@@ -129,7 +133,6 @@
 	&__title
 		+myriadpro-font
 		font-size: 18px
-		font-weight: 700
 		line-height: 1.33
 		color: #2c2e37
 		text-align: center
@@ -139,7 +142,7 @@
 		height: 179px
 		margin-right: auto
 		margin-left: auto
-		margin-bottom: 30px
+		margin-bottom: 25px
 		padding: 70px
 		color: #404041
 		background-color: #e6e0dc
@@ -157,11 +160,12 @@
 
 .advantages-list
 	display: flex
+	flex-wrap: wrap
 
 	&__item
 		width: 33.33%
-		padding-left: 56px
-		padding-right: 56px
+		margin-bottom: 67px
+		padding: 0 30px;
 
 .logos
 	background-color: #5e5e5e
@@ -178,9 +182,13 @@
 
 
 .section-info
-	padding-top: 116px
+	padding-top: 66px
 	padding-bottom: 116px
 	background-color: #f0ebe7
+	background-image: url("../img/bg/bg-info.jpg")
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: contain
 
 	&__feedback
 		display: flex
@@ -192,12 +200,26 @@
 		width: 50%
 
 .feedback
-	padding-top: 25px	
-	padding-left: 18px
-	padding-right: 18px
+	position: relative
+	padding-top: 36px	
+	padding-left: 28px
+	padding-right: 28px
+	padding-bottom: 17px
+
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		width: 24px
+		height: 22px
+		background-image: url("../img/pic/quote.png")
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+
 
 	&__text
-		margin-bottom: 25px
+		margin-bottom: 16px
 		font-size: 18px
 		line-height: 1.83
 		color: #646464
@@ -236,6 +258,7 @@
 	line-height: 2.9
 	font-weight: 700
 	text-align: center
+	letter-spacing: 2px
 	text-transform: uppercase
 	text-decoration: none
 	background-color: #0c283f
@@ -248,7 +271,7 @@
 
 
 .about 
-	padding: 43px 30px
+	padding: 36px 30px
 	background-color: #ffffff
 	border-radius: 10px 
 
@@ -256,22 +279,22 @@
 		display: flex
 
 	&__img
-		width: 152px
-		margin-right: 30px
+		width: 16%
+		// margin-right: 30px
 
 	&__item
-		width: 70%
-		margin-right: 67px
+		width: 48%
+
 
 		&--main
-			width: 30%
+			width: 34%
 			margin-right: 0
 
 .info-sect
 
 	&__title
 		display: block
-		margin-bottom: 42px
+		margin-bottom: 32px
 		+opensans-font
 		font-size: 36px
 		line-height: 1
@@ -282,6 +305,7 @@
 		text-decoration: none
 
 	&__text
+		padding-right: 30px
 		+opensans-font
 		font-size: 16px
 		line-height: 1.8
@@ -302,8 +326,6 @@
 		line-height: 1.81
 		color: #383e4a
 		text-decoration: none
-
-
 
 .footer
 	padding: 34px 0
