@@ -14,63 +14,82 @@ title: Mintebi Scout
 </header>
 
 <main class="main">
-	<section class="section-banner">
-		<div class="banner">
-			<div class="banner__wrap  container">
-				<div class="banner__content">
-					<h2 class="banner__title">
-						We find the expertise you need
-					</h2>
-					<div class="banner__descr">
-						No matter how niche the space, there are people out there with exactly the knowledge that you need. Mintebi Scout helps you find these people, using a combination of artificial intelligence, algorithms and old-fashioned research. We are currently offering our solution for free. That is how much we believe you will like it.
+
+	<div class="main__top">
+		<section class="section-banner">
+			<div class="banner">
+				<div class="banner__wrap  container">
+					<div class="banner__content">
+						<h2 class="banner__title">
+							We find the expertise you need
+						</h2>
+						<div class="banner__descr">
+							No matter how niche the space, there are people out there with exactly the knowledge that you need. Mintebi Scout helps you find these people, using a combination of artificial intelligence, algorithms and old-fashioned research. We are currently offering our solution for free. That is how much we believe you will like it.
+						</div>
+					</div>
+
+					<div class="banner__media-block">
+						<!-- <div class="banner__img  banner__img--big"></div> -->
+						<img  class="banner__img  banner__img--big" width="499" height="353" src="../img/pic/slide3.jpg" alt="banner image">
+						<img  class="banner__img  banner__img--normal" width="499" height="353" src="../img/pic/slide2.jpg" alt="banner image">
+						<img  class="banner__img  banner__img--small" width="499" height="353" src="../img/pic/slide1.jpg" alt="banner image">
 					</div>
 				</div>
-
-				<div class="banner__media-block">
-					<!-- <div class="banner__img  banner__img--big"></div> -->
-					<img  class="banner__img  banner__img--big" width="499" height="353" src="../img/pic/slide3.jpg" alt="banner image">
-					<img  class="banner__img  banner__img--normal" width="499" height="353" src="../img/pic/slide2.jpg" alt="banner image">
-					<img  class="banner__img  banner__img--small" width="499" height="353" src="../img/pic/slide1.jpg" alt="banner image">
-				</div>
 			</div>
-		</div>
-	</div>
-</section>
+		</section>
 
 
-<section class="section-form">
-	<div class="container">
-		<div class="section-form__wrap">
-			<div class="section-form__title">
-				<h2 class="sect-title  sect-title--dark">Make your expertise request</h2>
-			</div>
-			<form action="" class="form">
-
-				<div class="form__item  form__item--group">
-					<input class="form__input" type="text" name="name" placeholder="Your name:" >
-					<input class="form__input" type="text" name="name" placeholder="Company:" >
-					<input class="form__input" type="text" name="name" placeholder="Your Email:" >
-				</div>
-
-				<div class="form__item  form__item--group">
-					<textarea class="form__textarea" cols="30" rows="10" name="comment" placeholder="Expertise request:"></textarea>
-				</div>
-
-				<div class="form__submit">	
-					<button type="submit" class="btn-important">Submit</button>
-
-					<div class="form__info">
-						Within 24hs you will have a list of subject-matter experts in your mailbox. Your personal information and request is kept strictly confidential and only seen by the Mintebi Scout team.
+		<section class="section-form">
+			<div class="container">
+				<div class="section-form__wrap">
+					<div class="section-form__title">
+						<div class="zigzag"></div>
+						<h2 class="sect-title  sect-title--dark">Make your expertise request</h2>
 					</div>
+					<form action="" class="form">
+
+						<div class="form__item">
+							<label class="form__label  form__label--name">
+								<input class="form__input" type="text" name="name" placeholder="Your name:" autocomplete="off">
+							</label>
+
+							<label class="form__label  form__label--company">
+								<input class="form__input" type="text" name="company" placeholder="Company:" autocomplete="off">
+							</label>
+
+							<label class="form__label  form__label--email">
+								<input class="form__input" type="email" name="email" placeholder="Your Email:" autocomplete="off">
+							</label>
+						</div>
+
+						<div class="form__item  form__item--textarea">
+							<textarea class="form__textarea" cols="30" rows="18" name="comment" placeholder="Expertise request:"></textarea>
+						</div>
+
+						<div class="form__submit">
+
+							<div class="form__btn">	
+								<button type="submit" class="btn-important">Submit</button>
+							</div>
+
+							<div class="form__info">
+								<p class="form__info-text">Within 24hs you will have a list of subject-matter experts in your mailbox.</p>
+								<p class="form__info-text">Your personal information and request is kept strictly confidential and only seen by the Mintebi Scout team.</p>
+							</div>
+						</div>
+
+						<label class="form__check">
+			                <input class="form__check-input"type="checkbox" checked name="agree"> 
+			                <span class="form__check-btn"></span>
+							<span class="form__check-text">I Accept the Terms &amp; Conditions</span>
+			            </label>
+			            
+
+					</form>
 				</div>
-
-				<span>I Accept the Terms & Conditions</span>
-
-			</form>
-		</div>
+			</div>
+		</section>
 	</div>
-</section>
-
 
 <section class="section-advantages">
 	<div class="container">
@@ -87,7 +106,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Finance, Private Equity & Venture Capital
+							Finance, Private Equity &amp; Venture Capital
 						</div>
 					</a>
 				</li>
@@ -99,7 +118,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Marketing & Advertising
+							Marketing &amp; Advertising
 						</div>
 					</a>
 				</li>
@@ -111,7 +130,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Consumer & Retail
+							Consumer &amp; Retail
 						</div>
 					</a>
 				</li>
@@ -124,7 +143,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Tecknology, Innovation & Startups
+							Tecknology, Innovation &amp; Startups
 						</div>
 					</a>
 				</li>
@@ -136,7 +155,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Healthcare, Pharma & Biotech
+							Healthcare, Pharma &amp; Biotech
 						</div>
 					</a>
 				</li>
@@ -148,7 +167,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Media & Entertainment
+							Media &amp; Entertainment
 						</div>
 					</a>
 				</li>
@@ -161,7 +180,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Energy & Minning
+							Energy &amp;Minning
 						</div>
 					</a>
 				</li>
@@ -173,7 +192,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Industrial & Manufacturing
+							Industrial &amp; Manufacturing
 						</div>
 					</a>
 				</li>
@@ -185,7 +204,7 @@ title: Mintebi Scout
 						</div>
 
 						<div class="advantage__title">
-							Utilities & Telecommunications
+							Utilities &amp; Telecommunications
 						</div>
 					</a>
 				</li>
@@ -227,7 +246,7 @@ title: Mintebi Scout
 
 			<div class="section-info__feedback-item  feedback">
 				<div class="feedback__text">
-					"Great experience! We needed an expert who could educate us about FDA & FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learnings we were looking for."
+					"Great experience! We needed an expert who could educate us about FDA &amp; FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learnings we were looking for."
 				</div>
 
 				<div class="feedback__info">
@@ -253,7 +272,7 @@ title: Mintebi Scout
 
 			<div class="section-info__feedback-item  feedback">
 				<div class="feedback__text">
-					"Great experience! We needed an expert who could educate us about FDA & FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learnings we were looking for."
+					"Great experience! We needed an expert who could educate us about FDA &amp; FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learnings we were looking for."
 				</div>
 
 				<div class="feedback__info">
@@ -332,7 +351,7 @@ title: Mintebi Scout
 <footer class="footer">
 	<div class="container">
 		<div class="footer__copyriting">
-			Copyright © 2015 Mintebi APS. All rights reserved. ngIf: !oldBrowser Terms & Conditions Privacy Policy end ngIf: !oldBrowser Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark
+			Copyright © 2015 Mintebi APS. All rights reserved. ngIf: !oldBrowser Terms &amp; Conditions Privacy Policy end ngIf: !oldBrowser Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark
 		</div>
 	</div>
 </footer>

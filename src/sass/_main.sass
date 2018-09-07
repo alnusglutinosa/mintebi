@@ -1,3 +1,10 @@
+.main
+	&__top
+		background-color: $bg-color--dark
+		background-image: url(../img/bg/map.png)
+		background-repeat: no-repeat
+		background-position: 74% 3%
+
 .header
 	position: absolute
 	top: 0
@@ -5,6 +12,9 @@
 	right: 0
 	padding: 50px 70px
 	z-index: 10
+
+	&__logo
+		margin-left: 72px
 
 .logo 
 	display: block
@@ -15,14 +25,10 @@
 		object-fit: cover
 
 .section-banner
-	padding: 130px 0 157px 0
+	padding: 68px 0 13px
 	color: #fff
 	position: relative
-	background-color: $bg-color--dark
-	background-image: url(../img/bg/map.svg)
-	background-repeat: no-repeat
-	background-size: 100%
-	background-position: top
+	
 
 .banner
 	display: block
@@ -30,7 +36,7 @@
 
 	&__title
 		display: block
-		margin-bottom: 27px
+		margin-bottom: 16px
 		+helvetic-font
 		font-size: 50px
 		font-weight: 700
@@ -42,6 +48,7 @@
 
 	&__descr
 		display: block
+		padding-left: 4px
 		font-size: 18px
 		line-height: 1.44
 		color: #ffffff
@@ -50,31 +57,30 @@
 	&__wrap
 		position: relative
 		display: flex
-		height: 380px
+		height: 386px
+		padding-left: 18px
+		padding-right: 18px
 
 		&::before 
 			content: ""
 			position: absolute
-			left: 0
+			left: 18px
 			top: 0
 			height: 100%
-			width: calc(100% - 96px)
+			width: calc(100% - 36px)
 			border: 3px solid $color-decor
 
 	&__content
 		z-index: 2
 		width: 58%
-		padding-top: 48px
-		padding-bottom: 48px
-		padding-left: 46px
-		padding-right: 35px
-		border: 1px solid #f7b400
+		padding: 43px 35px 48px 48px
+		// border: 1px solid #f7b400
 
 	&__media-block
 		z-index: 2
 		position: relative
 		width: 42%
-		border: 1px solid #f7b400
+		// border: 1px solid #f7b400
 
 	&__img    
 		display: block
@@ -85,59 +91,20 @@
 		&--normal
 			width: 217px
 			height: 217px
-			margin-right: 245px
-			margin-top: -152px
+			margin-right: 236px
+			margin-top: -156px
 
 		&--small
 			width: 122px
 			height: 122px
-			margin-right: 173px
-			margin-top: -20px
+			margin-right: 138px
+			margin-top: -31px
 
 		&--big 
 			width: 499px
 			height: 353px
-			margin-top: -87px
-			margin-right: -97px
-
-
-	// &__img
-	// 	// position: relative
-	// 	position: absolute
-	// 	top: 0
-	// 	left: 0
-	// 	width: 100%
-
-	// 	&::after
-	// 		content: ""
-	// 		position: absolute
-	// 		bottom: -15%
-	// 		left: 0
-	// 		width: 51%
-	// 		padding-bottom: 51%
-	// 		background-image: url("../img/pic/slide2.jpg")
-	// 		background-position: center center
-	// 		background-size: cover
-
-	// 	&--small
-	// 		&::after
-	// 			content: ""
-	// 			bottom: -35%
-	// 			left: 50%
-	// 			transform: translate(-50%,0)
-	// 			width: 28%
-	// 			padding-bottom: 28%
-	// 			background-image: url("../img/pic/slide1.jpg")
-
-	// 	&--big
-	// 		&::after
-	// 			content: ""
-	// 			top: -47%
-	// 			left: auto
-	// 			right: -17%
-	// 			width: 100%
-	// 			padding-bottom: 70%
-	// 			background-image: url("../img/pic/slide3.jpg")
+			margin-top: -57px
+			margin-right: -101px
 
 .section-advantages
 	padding-top: 116px
@@ -162,20 +129,79 @@
 	color: #2c2e37
 	text-transform: uppercase
 
-	&::before
-		content: ""
-		position: absolute
-		top: 0
-		left: 50%
-		transform: translate(-50%,0)
-		width: 100px
-		height: 8px
-		background-image: url(../img/ico/wawe.svg)
-		background-position: center center
-		background-size: cover
+	// &::before
+	// 	content: ""
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 50%
+	// 	transform: translate(-50%,0)
+	// 	width: 100px
+	// 	height: 8px
+	// 	background-image: url(../img/ico/wawe.svg)
+	// 	background-position: center center
+	// 	background-size: cover
 
 	&--dark 
 		color: #ffffff
+		font-weight: 400
+
+.zigzag 
+	// margin: 7.5% 0
+	position: relative
+	height: $height-zigzag
+	width: 81px
+	z-index: 1
+
+	&:before,
+	&:after 
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+	
+	&:before 
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		height: 12px
+		top: 110%
+		// background: linear-gradient(-135deg, #F7A9B9 8px, transparent 0) 0 8px, linear-gradient(135deg, #F7A9B9 8px, transparent 0) 0 8px
+		background-image: linear-gradient(-135deg, $color-decor 8px, transparent 0px), linear-gradient(135deg, $color-decor 8px, transparent 0px)
+		background-position: top left
+		background-repeat: repeat-x
+		background-size: 16px 16px
+
+		// height: $height-zigzag-bottom
+		// top: $thickness
+		// background: linear-gradient(-135deg, $linecolor $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $linecolor $halfheight, transparent 0) 0 $halfheight
+		// background-position: top left
+		// background-repeat: repeat-x
+		// background-size: $height-zigzag $height-zigzag
+	
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		height: 16px
+		top: 100%
+		// background: linear-gradient(-135deg, #F7F2E2 8px, transparent 0) 0 8px, linear-gradient(135deg, #F7F2E2 8px, transparent 0) 0 8px
+		background-image: linear-gradient(-135deg, $bg-color--dark 8px, transparent 0px), linear-gradient(135deg, $bg-color--dark 8px, transparent 0px)
+		background-position: top left
+		background-repeat: repeat-x
+		background-size: 16px 16px
+
+		// height: $height-zigzag
+		// top: 100%
+		// background: linear-gradient(-135deg, $bg-zigzag $halfheight, transparent 0) 0 $halfheight, linear-gradient( 135deg, $bg-zigzag $halfheight, transparent 0) 0 $halfheight
+		// background-position: top left
+		// background-repeat: repeat-x
+		// background-size: $height-zigzag $height-zigzag
+	
 
 
 .advantage 
@@ -239,7 +265,7 @@
 	background-image: url("../img/bg/bg-info.jpg")
 	background-repeat: no-repeat
 	background-position: bottom center
-	background-size: contain
+	background-size: cover
 
 	&__feedback
 		display: flex
@@ -321,14 +347,14 @@
 
 .btn-important
 	display: inline-block
-	padding: 0 15px 
+	padding: 0 74px 
 	color: #ffffff
 	font-size: 20px
 	line-height: 2.9
 	font-weight: 700
 	text-align: center
-	letter-spacing: 5px
-	text-transform: uppercase
+	letter-spacing: 2px
+	text-transform: capitalize
 	text-decoration: none
 	background-color: #06dbc4
 	border-radius: 5px
@@ -336,7 +362,7 @@
 
 	&:hover,
 	&:focus
-		background-color: #093559
+		background-color: #07c4b0
 
 
 .about 
@@ -420,10 +446,12 @@
 		margin-bottom: 15px
 
 .form 
+	$this: &
+	letter-spacing: 0.3px
+
 	&__item
 		display: flex
-		margin-bottom: 20px
-		padding: 18px 20px
+		margin-bottom: 22px
 		box-sizing: border-box
 		background: #ffffff
 		font-weight: normal
@@ -433,13 +461,95 @@
 		color: #333
 		border-radius: 3px
 
-	&__input
+		&--textarea
+			margin-bottom: 27px
+
+	&__label
+		position: relative
 		width: 33.33%
+		padding: 20px 0
+
+		&:not(:last-child)::before
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			width: 1px
+			height: 35px
+			background: #86939d
+
+		&--name
+			width: 31%
+
+		&--company
+			width: 30%
+
+		&--email
+			width: 39%
+
+
+	&__input
+		position: relative
+		width: 100%
+		padding: 0 24px 
+		font-size: 16px
+		line-height: 1.25
+		color: #383e4a		
 
 	&__textarea 
 		display: block
 		width: 100%
+		padding: 28px 21px 36px 21px
 		background-color: transparent
 		border: none
+		resize: none
+		overflow: auto
+
+	&__submit
+		display: flex
+		align-items: center
+		margin-bottom: 10px
+
+	&__btn 
+		margin-right: 14px
+
+	&__info
+		font-size: 18px
+		line-height: 1.44
+		color: #ffffff
+
+	&__check
+		display: flex
+		align-items: center
+
+	&__check-input
+		display: none
+
+		&:checked+#{$this}__check-btn 
+			// background: url(../img/ico/check.png) no-repeat center/8px 6px
+			background-image: url(../img/ico/check.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: 11px 7px
+
+	&__check-btn
+		display: inline-block
+		width: 20px
+		height: 19px
+		margin-right: 10px
+		border: 2px solid #ffffff
+		border-radius: 1px
+
+	&__check-text
+		text-decoration: underline
+
+
+
+		
+
+
+
 
 
