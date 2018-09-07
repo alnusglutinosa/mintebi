@@ -6,7 +6,6 @@
 	padding: 50px 70px
 	z-index: 10
 
-
 .logo 
 	display: block
 
@@ -16,7 +15,7 @@
 		object-fit: cover
 
 .section-banner
-	padding: 290px 20px 127px
+	padding: 130px 0 157px 0
 	color: #fff
 	position: relative
 	background-color: $bg-color--dark
@@ -25,68 +24,120 @@
 	background-size: 100%
 	background-position: top
 
-
-.sect-border
-	position: relative
-	padding: 48px 0px 48px 45px
-	border: 3px solid $color-decor
+.banner
+	display: block
+	padding: 48px 0
 
 	&__title
+		display: block
 		margin-bottom: 27px
-		color: #ffffff
+		+helvetic-font
 		font-size: 50px
+		font-weight: 700
 		line-height: 1
-		letter-spaing: 2
+		letter-spacing: 2.4px
+		color: #ffffff
 		text-transform: uppercase
+		text-decoration: none
+
+	&__descr
+		display: block
+		font-size: 18px
+		line-height: 1.44
+		color: #ffffff
+		text-decoration: none
 
 	&__wrap
-		display: flex
-
-	&__content
-		width: 58%
-		padding-right: 35px
-
-	&__media-block
 		position: relative
-		width: 42%
+		display: flex
+		height: 380px
 
-	&__img
-		// position: relative
-		position: absolute
-		top: 0
-		left: 0
-		width: 100%
-
-		&::after
+		&::before 
 			content: ""
 			position: absolute
-			bottom: -15%
 			left: 0
-			width: 51%
-			padding-bottom: 51%
-			background-image: url("../img/pic/slide2.jpg")
-			background-position: center center
-			background-size: cover
+			top: 0
+			height: 100%
+			width: calc(100% - 96px)
+			border: 3px solid $color-decor
+
+	&__content
+		z-index: 2
+		width: 58%
+		padding-top: 48px
+		padding-bottom: 48px
+		padding-left: 46px
+		padding-right: 35px
+		border: 1px solid #f7b400
+
+	&__media-block
+		z-index: 2
+		position: relative
+		width: 42%
+		border: 1px solid #f7b400
+
+	&__img    
+		display: block
+		background: pink
+		margin-left: auto
+		object-fit: cover
+
+		&--normal
+			width: 217px
+			height: 217px
+			margin-right: 245px
+			margin-top: -152px
 
 		&--small
-			&::after
-				content: ""
-				bottom: -35%
-				left: 50%
-				transform: translate(-50%,0)
-				width: 28%
-				padding-bottom: 28%
-				background-image: url("../img/pic/slide1.jpg")
+			width: 122px
+			height: 122px
+			margin-right: 173px
+			margin-top: -20px
 
-		&--big
-			&::after
-				content: ""
-				top: -47%
-				left: auto
-				right: -17%
-				width: 100%
-				padding-bottom: 70%
-				background-image: url("../img/pic/slide3.jpg")
+		&--big 
+			width: 499px
+			height: 353px
+			margin-top: -87px
+			margin-right: -97px
+
+
+	// &__img
+	// 	// position: relative
+	// 	position: absolute
+	// 	top: 0
+	// 	left: 0
+	// 	width: 100%
+
+	// 	&::after
+	// 		content: ""
+	// 		position: absolute
+	// 		bottom: -15%
+	// 		left: 0
+	// 		width: 51%
+	// 		padding-bottom: 51%
+	// 		background-image: url("../img/pic/slide2.jpg")
+	// 		background-position: center center
+	// 		background-size: cover
+
+	// 	&--small
+	// 		&::after
+	// 			content: ""
+	// 			bottom: -35%
+	// 			left: 50%
+	// 			transform: translate(-50%,0)
+	// 			width: 28%
+	// 			padding-bottom: 28%
+	// 			background-image: url("../img/pic/slide1.jpg")
+
+	// 	&--big
+	// 		&::after
+	// 			content: ""
+	// 			top: -47%
+	// 			left: auto
+	// 			right: -17%
+	// 			width: 100%
+	// 			padding-bottom: 70%
+	// 			background-image: url("../img/pic/slide3.jpg")
 
 .section-advantages
 	padding-top: 116px
@@ -123,10 +174,11 @@
 		background-position: center center
 		background-size: cover
 
-.advantage 
-	// margin-left: -56px
-	// margin-right: -56px
+	&--dark 
+		color: #ffffff
 
+
+.advantage 
 	&__wrap
 		text-decoration: none
 		
@@ -165,7 +217,7 @@
 	&__item
 		width: 33.33%
 		margin-bottom: 67px
-		padding: 0 30px;
+		padding: 0 30px
 
 .logos
 	background-color: #5e5e5e
@@ -179,7 +231,6 @@
 
 	&__item
 		padding: 0 70px
-
 
 .section-info
 	padding-top: 66px
@@ -249,7 +300,6 @@
 	&__btn
 		margin-left: 85px
 
-
 .btn 
 	display: inline-block
 	padding: 0 15px 
@@ -262,6 +312,25 @@
 	text-transform: uppercase
 	text-decoration: none
 	background-color: #0c283f
+	border-radius: 5px
+	user-select: none
+
+	&:hover,
+	&:focus
+		background-color: #093559
+
+.btn-important
+	display: inline-block
+	padding: 0 15px 
+	color: #ffffff
+	font-size: 20px
+	line-height: 2.9
+	font-weight: 700
+	text-align: center
+	letter-spacing: 5px
+	text-transform: uppercase
+	text-decoration: none
+	background-color: #06dbc4
 	border-radius: 5px
 	user-select: none
 
@@ -338,4 +407,39 @@
 		line-height: 1.2
 		color: #ffffff
 		text-decoration: none
+
+.section-form
+	padding: 30px 0 50px 0
+	color: #fff
+	background-color: $bg-color--dark
+
+	&__wrap 
+		padding: 0 18px
+
+	&__title 
+		margin-bottom: 15px
+
+.form 
+	&__item
+		display: flex
+		margin-bottom: 20px
+		padding: 18px 20px
+		box-sizing: border-box
+		background: #ffffff
+		font-weight: normal
+		font-size: 13px
+		text-transform: uppercase
+		line-height: 1.2
+		color: #333
+		border-radius: 3px
+
+	&__input
+		width: 33.33%
+
+	&__textarea 
+		display: block
+		width: 100%
+		background-color: transparent
+		border: none
+
 
