@@ -1,0 +1,38 @@
+.footer
+	padding: 34px 0
+	background-color: #bab7b0
+
+	+xs 
+		padding: 25px 15px
+
+	&__wrap
+		position: relative
+		display: flex
+		align-items: center
+
+		+r(1560)
+			padding: 0 25px
+
+		+md 
+			flex-direction: column
+			padding: 0 15px
+
+	&__copyriting
+		display: block
+		+opensans-font
+		font-size: 13px
+		line-height: 1.2
+		color: #ffffff
+		text-decoration: none
+
+		+md
+			margin-bottom: 20px
+
+	&__social 
+		position: absolute
+		right: 0
+		padding: 0 60px
+
+		+r(1560) 
+			position: static
+			padding: 0

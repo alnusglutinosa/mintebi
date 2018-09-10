@@ -1,0 +1,152 @@
+.form 
+	$this: &
+	letter-spacing: 0.3px
+
+	&__item
+		display: flex
+		margin-bottom: 22px
+		box-sizing: border-box
+		background: #ffffff
+		font-weight: normal
+		font-size: 13px
+		text-transform: uppercase
+		line-height: 1.2
+		color: #333
+		border-radius: 3px
+
+		+sm
+			flex-wrap: wrap
+
+		&--wrap
+			+sm 
+				background: none
+				border-radius: 0
+
+		&--textarea
+			margin-bottom: 27px
+
+	&__label
+		position: relative
+		width: 33.33%
+		padding: 21px 0
+
+		&:not(:last-child)::before
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			top: 50%
+			transform: translate(0, -50%)
+			width: 1px
+			height: 35px
+			background: #86939d
+
+		+sm 
+			margin-bottom: 15px
+			background: #ffffff
+			border-radius: 3px
+
+		&--name
+			width: 31%
+
+			+md 
+				width: 100%
+
+		&--company
+			width: 30%
+
+			+md 
+				width: 100%
+
+		&--email
+			width: 39%
+
+			+md 
+				width: 100%
+
+	&__input
+		position: relative
+		width: 100%
+		padding: 0 24px 
+		font-size: 16px
+		line-height: 1.25
+		color: #383e4a		
+
+	&__textarea 
+		display: block
+		width: 100%
+		padding: 28px 21px 25px
+		font-size: 16px
+		line-height: 1.25
+		color: #383e4a
+		background-color: transparent
+		border: none
+		resize: none
+		overflow: auto
+
+	&__footer
+		display: flex
+		flex-direction: column
+
+	&__submit
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 10px
+
+		+xs 
+			flex-direction: column
+			align-items: flex-start
+
+	&__btn 
+		margin-right: 14px
+
+		+md
+			margin-right: 0
+
+	&__info
+		font-size: 18px
+		line-height: 1.44
+		color: #ffffff
+
+		+md 
+			font-size: 14px
+			line-height: 1.2
+			order: 1
+
+	&__check
+		display: flex
+		align-items: center
+		width: 100%
+		margin-top: 9px
+		user-select: none
+		cursor: pointer
+
+		&:hover
+			#{$this}__check-btn
+				border-color: #06dbc4
+
+		+md 
+			margin-bottom: 12px
+			
+	&__check-input
+		display: none
+
+		&:checked+#{$this}__check-btn 
+			background-image: url(../img/ico/check.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: 11px 7px
+
+
+	&__check-btn
+		display: inline-block
+		width: 20px
+		height: 19px
+		margin-right: 10px
+		border: 2px solid #ffffff
+		border-radius: 1px
+		transition: border-color .3s ease-out
+
+	&__check-text
+		text-decoration: underline

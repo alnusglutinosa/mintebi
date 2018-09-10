@@ -1,0 +1,157 @@
+.banner
+	display: block
+	padding: 48px 0
+
+	+xs 
+		padding: 30px 0
+
+	&__title
+		display: block
+		margin-bottom: 16px
+		+helvetic-font
+		font-size: 50px
+		font-weight: 700
+		line-height: 1
+		letter-spacing: 6px
+		color: #ffffff
+		text-transform: uppercase
+		text-decoration: none
+
+		+r(860)
+			font-size: 40px
+			letter-spacing: 3px
+
+		+xs 
+			font-size: 30px
+			letter-spacing: 2px
+
+	&__descr
+		display: block
+		padding-left: 4px
+		font-size: 18px
+		line-height: 1.44
+		color: #ffffff
+		text-align: justify
+		text-decoration: none
+
+	&__wrap
+		position: relative
+		display: flex
+		height: 386px
+		padding-left: 18px
+		padding-right: 18px
+
+		&::before 
+			content: ""
+			position: absolute
+			left: 18px
+			top: 0
+			height: 100%
+			width: calc(100% - 36px)
+			border: 3px solid $color-decor
+
+		+r(1250)
+			height: auto
+
+		+r(860)
+			flex-wrap: wrap
+
+
+	&__content
+		z-index: 2
+		width: 58%
+		padding: 43px 27px 48px 48px
+
+		+r(1250)
+			width: 65%
+
+		+r(860)
+			width: 100%
+			padding: 25px 27px
+
+		+r(390)
+			padding: 25px 15px
+
+	&__media-block
+		z-index: 2
+		position: relative
+		width: 42%
+
+		+r(1250)
+			width: 45%
+
+		+r(860)
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 0 10px 20px 10px
+
+	&__img-wrap
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+		+r(860)
+			position: relative
+			top: auto
+			left: auto
+			transform: none
+
+	&__img    
+		display: block
+		background: pink
+		margin-left: auto
+		object-fit: cover
+
+		&--normal
+			width: 217px
+			height: 217px
+			margin-right: 216px
+			margin-top: -156px
+
+			+lg 
+				margin-top: -125px
+
+			+r(1250)
+				width: 109px
+				height: 109px
+				margin: -46px 201px 0 auto
+
+			+r(390)
+				margin: -13px auto 0 auto
+
+		&--small
+			width: 122px
+			height: 122px
+			margin-right: 117px
+			margin-top: -31px
+
+			+r(1250)
+				width: 61px
+				height: 61px
+				margin: -29px 156px 0px auto
+
+		&--big 
+			width: 499px
+			height: 353px
+			margin-top: 4px
+			margin-right: -122px
+
+			+lg 
+				width: 455px
+				height: 322px
+				margin-top: -57px
+				margin-right: -58px
+
+			+r(1250)
+				width: 250px
+				height: 177px
+				margin-left: auto		
+				margin-right: 9px
+				margin-top: 9px
+				margin-bottom: auto
+
+			+r(390) 
+				margin: 0 auto

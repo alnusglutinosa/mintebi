@@ -1,0 +1,62 @@
+.feedback
+	position: relative
+	padding: 36px 25px 17px
+
+	&::before
+		content: ""
+		position: absolute
+		top: 3px
+		width: 24px
+		height: 22px
+		background-image: url("../img/pic/quote.png")
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+
+
+	&__text
+		margin-bottom: 16px
+		font-size: 18px
+		line-height: 1.83
+		color: #646464
+
+	&__info
+		display: flex
+		align-items: center
+
+		+xs 
+			flex-direction: column
+
+	&__photo
+		margin-right: 20px
+		padding-top: 8px
+
+		+xs 
+			margin-right: 0
+			padding-bottom: 8px
+
+	&__person
+		+xs 
+			margin-bottom: 20px
+
+	&__name
+		display: block
+		font-size: 16px
+		line-height: 1.8
+		font-weight: 700
+		color: #113752
+		text-decoration: none
+
+	&__position
+		display: block
+		line-height: 1
+		color: #113752
+		text-decoration: none
+
+	&__btn
+		margin-left: 85px
+
+		+md
+			margin-left: 0
+			margin-top: 15px
+			text-align: center

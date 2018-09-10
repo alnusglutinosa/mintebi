@@ -1,0 +1,24 @@
+.logos
+	background-color: #5e5e5e
+	padding: 56px 0
+
+	&__inner
+		display: flex
+		justify-content: center
+		align-items: center
+
+		+r(500)
+			flex-direction: column
+
+	&__item
+		padding: 0 64px
+
+		+md 
+			padding: 0 20px
+
+		+r(600) 
+			padding: 0 10px
+
+		+r(500) 
+			&:not(:last-child) 
+				margin-bottom: 25px

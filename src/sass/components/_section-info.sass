@@ -1,0 +1,44 @@
+.section-info
+	padding-top: 53px
+	padding-bottom: 173px
+	background-color: #f0ebe7
+	background-image: url("../img/bg/bg-info.jpg")
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: cover
+
+	+md
+		padding: 0 20px 80px 20px
+
+	+xs 
+		padding-bottom: 66px
+
+	&__title
+		margin-bottom: 84px
+		text-align: center
+
+	&__feedback
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 200px
+
+		+xs 
+			flex-direction: column
+			margin-bottom: 50px
+
+	&__feedback-item
+		width: 50%
+
+		+xs 
+			width: 100%
+
+			&:not(:last-child)
+				margin-bottom: 40px
+
+	&__about
+		+md
+			padding: 0 20px
+
+		+xs
+			padding: 0 15px
