@@ -30,9 +30,11 @@ title: Mintebi Scout
 
 					<div class="banner__media-block">
 						<!-- <div class="banner__img  banner__img--big"></div> -->
-						<img  class="banner__img  banner__img--big" width="499" height="353" src="../img/pic/slide3.jpg" alt="banner image">
-						<img  class="banner__img  banner__img--normal" width="499" height="353" src="../img/pic/slide2.jpg" alt="banner image">
-						<img  class="banner__img  banner__img--small" width="499" height="353" src="../img/pic/slide1.jpg" alt="banner image">
+						<div class="banner__img-wrap">
+							<img  class="banner__img  banner__img--big" width="499" height="353" src="../img/pic/slide3.jpg" alt="banner image">
+							<img  class="banner__img  banner__img--normal" width="499" height="353" src="../img/pic/slide2.jpg" alt="banner image">
+							<img  class="banner__img  banner__img--small" width="499" height="353" src="../img/pic/slide1.jpg" alt="banner image">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -43,48 +45,54 @@ title: Mintebi Scout
 			<div class="container">
 				<div class="section-form__wrap">
 					<div class="section-form__title">
-						<div class="zigzag"></div>
+						<div class="zigzag  zigzag--dark"></div>
 						<h2 class="sect-title  sect-title--dark">Make your expertise request</h2>
 					</div>
-					<form action="" class="form">
+					<form  class="form" action="" method="post">
 
-						<div class="form__item">
+						<div class="form__item  form__item--wrap">
 							<label class="form__label  form__label--name">
-								<input class="form__input" type="text" name="name" placeholder="Your name:" autocomplete="off">
+								<input class="form__input" type="text" name="name" placeholder="Your name:" autocomplete="off" required>
 							</label>
 
 							<label class="form__label  form__label--company">
-								<input class="form__input" type="text" name="company" placeholder="Company:" autocomplete="off">
+								<input class="form__input" type="text" name="company" placeholder="Company:" autocomplete="off" required>
 							</label>
 
 							<label class="form__label  form__label--email">
-								<input class="form__input" type="email" name="email" placeholder="Your Email:" autocomplete="off">
+								<input class="form__input" type="email" name="email" placeholder="Your Email:" autocomplete="off" required>
 							</label>
 						</div>
 
 						<div class="form__item  form__item--textarea">
-							<textarea class="form__textarea" cols="30" rows="18" name="comment" placeholder="Expertise request:"></textarea>
+							<textarea class="form__textarea" cols="30" rows="14" name="comment" placeholder="Expertise request:" required></textarea>
 						</div>
 
-						<div class="form__submit">
+						<div class="form__footer">
 
-							<div class="form__btn">	
-								<button type="submit" class="btn-important">Submit</button>
+							<div class="form__submit">
+
+								<div class="form__btn">	
+									<button type="submit" class="btn-important">Submit</button>
+								</div>
+
+								<div class="form__info">
+									<p class="form__info-text">Within 24hs you will have a list of subject-matter experts in your mailbox.</p>
+									<p class="form__info-text">Your personal information and request is kept strictly confidential and only seen by the Mintebi Scout team.</p>
+								</div>
+
+								<label class="form__check">
+					                <input class="form__check-input"type="checkbox" checked name="agree"> 
+					                <span class="form__check-btn"></span>
+									<span class="form__check-text">I Accept the Terms &amp; Conditions</span>
+					            </label>
+
 							</div>
 
-							<div class="form__info">
-								<p class="form__info-text">Within 24hs you will have a list of subject-matter experts in your mailbox.</p>
-								<p class="form__info-text">Your personal information and request is kept strictly confidential and only seen by the Mintebi Scout team.</p>
-							</div>
-						</div>
+							
 
-						<label class="form__check">
-			                <input class="form__check-input"type="checkbox" checked name="agree"> 
-			                <span class="form__check-btn"></span>
-							<span class="form__check-text">I Accept the Terms &amp; Conditions</span>
-			            </label>
+			            </div>
 			            
-
 					</form>
 				</div>
 			</div>
@@ -94,6 +102,7 @@ title: Mintebi Scout
 <section class="section-advantages">
 	<div class="container">
 		<div class="section-advantages__title">
+			<div class="zigzag"></div>
 			<h2 class="sect-title">Subject-matter experts for...</h2>
 		</div>
 
@@ -113,7 +122,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--marketing">
 							{{mixins.icon('marketing')}}
 						</div>
 
@@ -125,7 +134,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--consumer">
 							{{mixins.icon('consumer')}}
 						</div>
 
@@ -138,7 +147,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--tecknology">
 							{{mixins.icon('tecknology')}}
 						</div>
 
@@ -150,7 +159,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--biotech">
 							{{mixins.icon('biotech')}}
 						</div>
 
@@ -162,7 +171,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--media">
 							{{mixins.icon('media')}}
 						</div>
 
@@ -175,7 +184,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico advantage__ico--energy">
 							{{mixins.icon('energy')}}
 						</div>
 
@@ -187,7 +196,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--industrial">
 							{{mixins.icon('industrial')}}
 						</div>
 
@@ -199,7 +208,7 @@ title: Mintebi Scout
 
 				<li class="advantages-list__item  advantage">
 					<a href="#" class="advantage__wrap">
-						<div class="advantage__ico">
+						<div class="advantage__ico  advantage__ico--utilities">
 							{{mixins.icon('utilities')}}
 						</div>
 
@@ -224,11 +233,11 @@ title: Mintebi Scout
 			</div>
 
 			<div class="logos__item">
-				<img class="logos__img" src="img/pic/logo/logo1.png" alt="logo">
+				<img class="logos__img" src="img/pic/logo/logo2.png" alt="logo">
 			</div>
 
 			<div class="logos__item">
-				<img class="logos__img" src="img/pic/logo/logo1.png" alt="logo">
+				<img class="logos__img" src="img/pic/logo/logo3.png" alt="logo">
 			</div>
 
 		</div>
@@ -238,7 +247,8 @@ title: Mintebi Scout
 
 <section class="section-info">
 	<div class="container">
-		<div class="section-advantages__title">
+		<div class="section-info__title">
+			<div class="zigzag  zigzag--light"></div>
 			<h2 class="sect-title">our Clients say</h2>
 		</div>
 
@@ -246,7 +256,7 @@ title: Mintebi Scout
 
 			<div class="section-info__feedback-item  feedback">
 				<div class="feedback__text">
-					"Great experience! We needed an expert who could educate us about FDA &amp; FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learnings we were looking for."
+					"Great experience! We needed an expert who could educate us about FDA &amp; FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learn&shy;ings we were looking for."
 				</div>
 
 				<div class="feedback__info">
@@ -272,7 +282,7 @@ title: Mintebi Scout
 
 			<div class="section-info__feedback-item  feedback">
 				<div class="feedback__text">
-					"Great experience! We needed an expert who could educate us about FDA &amp; FTC approval procedures in the US. We quickly got in touch with the right expert, and the report was straight to the point with the learnings we were looking for."
+					"These days the amount of information available on the web is enor&shy;mous, but without in-depth knowledge of a topic you don’t know whether you can fully trust what you read. Mintebi is efficiently closing that gap."
 				</div>
 
 				<div class="feedback__info">
@@ -282,10 +292,10 @@ title: Mintebi Scout
 
 					<div class="feedback__person">
 						<div class="feedback__name">
-							Christian Reventlow Trautner
+							Kristian Mogensen
 						</div>
 						<div class="feedback__position">
-							Director of Business Development, Acteon Group
+							Enhanched Oil Recovery, ENI
 						</div>							 
 					</div>
 				</div>
@@ -350,9 +360,27 @@ title: Mintebi Scout
 
 <footer class="footer">
 	<div class="container">
-		<div class="footer__copyriting">
-			Copyright © 2015 Mintebi APS. All rights reserved. ngIf: !oldBrowser Terms &amp; Conditions Privacy Policy end ngIf: !oldBrowser Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark
+		<div class="footer__wrap">
+			<div class="footer__copyriting">
+				Copyright © 2015 Mintebi APS. All rights reserved. ngIf: !oldBrowser Terms &amp; Conditions Privacy Policy end ngIf: !oldBrowser Mintebi APS, Sankt Annae Plads 11, 1250 Copenhagen, Denmark
+			</div>
+
+			<div class="footer__social">
+				<ul class="social-list">
+					<li class="social-list__item">
+						<a class="social-btn  social-btn--tw" href="#" target="_blank" title="link twitter"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-btn  social-btn--in" href="#" target="_blank" title="link in"></a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-btn  social-btn--fb" href="#" target="_blank" title="link facebook"></a>
+					</li>
+				</ul>
+			</div>
+
 		</div>
+
 	</div>
 </footer>
 
